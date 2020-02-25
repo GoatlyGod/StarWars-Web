@@ -1,26 +1,38 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+const App = () => {
+  return(
+    <div>
+      <nav className="navbar navbar-dark bg-dark fixed-top">
+        <form className="form-inline">
+          <button type="button active" className="btn btn-outline-dark text-light"><i className="fa fa-facebook"></i></button>
+          <button type="button active" className="btn btn-outline-dark text-secondary"><i className="fa fa-twitter"></i></button>
+          <button type="button active" className="btn btn-outline-dark text-secondary"><i className="fa fa-instagram"></i></button>
+          <button type="button active" className="btn btn-outline-dark text-secondary"><i className="fa fa-youtube"></i></button>
+        </form>
+
+        <b className="navbar-brand" href="#">STARWARS</b>
+
+        <form className="form-inline my-2 my-lg-0">
+          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button className="btn my-2 my-sm-0" type="submit"><i className="fa fa-search"></i></button>
+          
+        </form>
+      </nav>
+     
     </div>
-  );
+
+    
+      
+          
+  
+       
+       
+      
+    
+  )
 }
 
 export default App;
