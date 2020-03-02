@@ -1,5 +1,7 @@
 import React from "react";
 import heartOutline from "../assets/heart-outline.svg";
+
+
 const Card = () => {
   return (
     <div>
@@ -17,7 +19,7 @@ const Card = () => {
           </p>
           <div class="d-flex justify-content-around">
             <a class="btn btn-primary" href="...">
-                Go somewhere
+                Learn more
             </a>
             <button type="button" class="btn btn-outline-warning">
             <img src={heartOutline} alt="favorite"></img>
@@ -30,4 +32,6 @@ const Card = () => {
     </div>
   );
 };
+
+
 export default Card;
